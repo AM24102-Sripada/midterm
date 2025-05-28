@@ -127,6 +127,12 @@ section h2 {
 
 /* Academic Section */
 
+.academics-section {
+    background: #EBF5E9;
+    color: #333; 
+    border-left: 5px solid #77aaff; 
+}
+
 .tab-space {
     display: inline-block;
     width: 10px;
