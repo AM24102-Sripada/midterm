@@ -1,0 +1,350 @@
+/* General Body Styles */
+
+
+* { 
+    /* Apply to all elements */
+    box-sizing: border-box;
+}
+
+body {
+    /*Text formattings*/
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+/*Container class is simply used for keeping the objects to the center. That's why most of the HTML objects mush be in this class*/
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Header and Navigation */
+header {
+    background: #333;;
+    color: #fff;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /*Ensures the header always stays  on top of the text (though the number is relatively big)*/
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header a:hover {
+    color: #77aaff;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Hero Section */
+.hero {
+    background: #26a69960; /* Semi-transparent background */
+    color: #333;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #77aaff;
+}
+
+.hero-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.hero-text p {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Section Styling */
+section {
+    padding: 40px 0;
+    background: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+/* Academic Section */
+
+.tab-space {
+    display: inline-block;
+    width: 10px;
+}
+
+.academics-section .academic-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f5f7fa;
+    border-left: 5px solid #77aaff;
+    border-radius: 5px;
+}
+
+.academics-section .academic-item h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+.academics-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.academics-section ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.academics-section ul li::before {
+    content: '•';
+    /*color: #77aaff;*/
+    color: #3A506B;
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+}
+
+.certificate-thumbnail {
+    width: 80px; /* Smaller size for display */
+    height: auto;
+    margin-left: 10px;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer; /* Indicate it's clickable */
+}
+
+
+/* Projects Section */
+.projects-section .project-item {
+    margin-bottom: 40px;
+    padding: 20px;
+    /*background: rgba(201, 193, 159, 0.7); /* Light background for projects. RGBA was easier to use for this case */;
+    background: #EBF5E9;
+    
+    border-radius: 5px;
+}
+
+.projects-section .project-item h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+.projects-section .project-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.projects-section .project-images img {
+    width: 100%;
+    height: 250px; /* Fixed height for consistency */
+    object-fit: contain; /* Maintain aspect ratio */
+    border-radius: 5px;
+}
+
+/* Achievements Section */
+.achievement-category {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #EBF5E9;
+    border-left: 5px solid #77aaff;
+    border-radius: 5px;
+}
+
+.achievement-category h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+.achievement-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.achievement-category ul li {
+    margin-bottom: 6px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.achievement-category ul li::before {
+    content: '•';
+    color: #77aaff;
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+}
+
+.contact-section p {
+    margin-bottom: 10px;
+}
+
+.contact-section a {
+    color: #77aaff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+
+
+
+/* Responsive Design --- This is for Tablet */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1, header ul {
+        float: none;
+        text-align: center;
+    }
+
+    header li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .hero-content {
+        flex-direction: column;
+    }
+
+    .hero-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .hero-text h2 {
+        font-size: 2em;
+    }
+
+    .projects-section .project-images {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 10px;
+    }
+}
+
+/*Responsive Design --- This is for very big screens*/
+@media (min-width: 1201px) {
+    header h1 {
+        float: left;
+        text-align: left; 
+    }
+    header ul {
+        float: right;
+        text-align: right; 
+    }
+}
+
+
+
+/* Responsive Design --- This is for Mobile */
+@media (max-width: 480px) {
+    header {
+        padding-top: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header a {
+        font-size: 14px;
+    }
+
+    .hero-text h2 {
+        font-size: 1.5em;
+    }
+
+    .hero-text p {
+        font-size: 1em;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+
+    .projects-section .project-images img {
+        height: 100px;
+    }
+}
