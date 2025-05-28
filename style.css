@@ -158,7 +158,6 @@ section h2 {
 
 .academics-section ul li::before {
     content: '•';
-    /*color: #77aaff;*/
     color: #3A506B;
     position: absolute;
     left: 0;
